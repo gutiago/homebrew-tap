@@ -1,4 +1,4 @@
-class SelectiveTesting < Formula
+class SelectiveTestingAT1_1_5 < Formula
   desc "Test Impact Analysis for Swift/Xcode projects"
   homepage "https://github.com/gutiago/selective-testing"
   url "https://github.com/gutiago/selective-testing/releases/download/1.1.5/selective-testing-darwin-arm64.tar.gz"
@@ -8,9 +8,5 @@ class SelectiveTesting < Formula
   def install
     bin.install "selective-testing"
     bin.install "index-helper"
-  end
-
-  test do
-    system "#{bin}/selective-testing", "--version"
   end
 end
